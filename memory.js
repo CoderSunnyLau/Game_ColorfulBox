@@ -163,9 +163,11 @@ $('.restart').click(function(){
 	init();
 });
 $(document).ready(function(){
+	console.log($(window).height());
 	if($('html').width() > $('html').height()){
-		$('html').css({'height':$(window).height(),'width':$(window).height()*0.75});
 		$('.mmr').addClass('mmrPC').removeClass("mmr");
+		$('html').css({'height':$(window).height()});
+		$('.mmrPC').css('width',$(window).height()*0.75)
 	}
 	$('.cnt>ol').removeClass('hidden');
 	$('.cnt>ol>li').click(function(){
