@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width,maximum-scale=1.0,initial-scale=0.5,user-scalable=no">
+	<title>Memory Game</title>
+	<link rel="stylesheet" rev="stylesheet" href="memory.css" type="text/css" media="all" />
+	<script src="jquery.min.js"></script>
+	<script src="jquery.cookie.js"></script>
+</head>
+<body>
+	<div class="mmr">
+		<h1>Memory Game</h1>
+		<div class="menu vsbHddn">
+			<button class="back">&lt;</button>
+			<b></b>
+			<div class="mmrStopwatch">00：00</div>
+		</div>
+		<div class="cnt">
+			<ol>
+				<li>1</li>
+				<li class="locked">2<b>未解鎖</b></li>
+				<li class="locked">3<b>未解鎖</b></li>
+				<li class="locked">4<b>未解鎖</b></li>
+				<li class="locked">5<b>未解鎖</b></li>
+				<li class="locked">6<b>未解鎖</b></li>
+				<li class="locked">7<b>未解鎖</b></li>
+				<li class="locked">8<b>未解鎖</b></li>
+				<li class="locked">9<b>未解鎖</b></li>
+				<li class="locked">10<b>未解鎖</b></li>
+			</ol>
+			<table class="mmrEles"></table>
+		</div>
+		<button class="restart vsbHddn">Restart</button>
+		<div class="popupWrap">
+			<div class="popupBg"></div>
+			<div class="popupBox">
+				<b>提 示<i>×</i></b>
+				<span>
+					<b class="tipMsg"></b>
+					<p class="mark">成　　績：<i></i></p>
+					<p class="top">最高紀錄：<i></i></p>
+				</span>
+				<button>下一關</button>
+			</div>
+		</div>
+	</div>
+	<script src="memory.js"></script>
+</body>
+</html>
