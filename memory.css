@@ -1,0 +1,247 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:"Calibri";
+	user-select:none;
+	-webkit-user-select:none;
+}
+html, body{
+	height:99%;
+	width:100%;
+}
+.mmr{
+	width:98%;
+	height:85%;
+	margin:2% auto;
+	border:2px solid #888;
+	padding:8% 0;
+}
+.mmr h1{
+	text-align:center;
+	line-height:30px;
+	margin:0 0 40px;
+}
+.menu{
+	height:55px;
+	width:90%;
+	margin:0 auto;
+	padding:0 5px;
+	position:relative;
+}
+.vsbHddn{
+	visibility:hidden;
+}
+.menu>b{
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 55px;
+    margin: -30px 0 0 -75px;
+    left: 50%;
+    top: 50%;
+    font:normal 30px/55px "Microsoft YaHei";
+    text-align: center;
+    color: #C36;
+}
+.menu>b>strong{
+	font:bold 40px/55px "Calibri","Microsoft YaHei";
+}
+.back{
+	font-size:50px;
+	line-height:50px;
+	background:#F5E0EB;
+	color:#C36;
+	border:none;
+	border-radius:10px;
+	width:120px;
+	height:50px;
+	cursor:pointer;
+	overflow:hidden;
+	float:left;
+}
+.mmrStopwatch{
+	width:120px;
+	height:55px;
+	font:normal 33px/55px "Microsoft YaHei";
+	color:#C36;
+	float:right;
+	text-align:right;
+}
+li{
+	list-style:none;
+}
+.mmrEles{
+	width:95%;
+	margin:0 auto 20px;
+	overflow:hidden;
+	table-layout:fixed;
+}
+.mmrEles td{
+	border:1px solid #CCC;
+	border-radius:10px;
+	font-size:40px;
+	font-weight:bold;
+	color:#C36;
+	empty-cells:show;
+	overflow:hidden;
+}
+.restart{
+	width:100px;
+	height:38px;
+	border-radius:10px;
+	background:#F5E0EB;
+	display:block;
+	cursor:pointer;
+	color:#C36;
+	font-size:20px;
+	margin:0 auto;
+	position:relative !important;
+	border:2px solid #C36;
+}
+.none{
+	background:#EEE;
+	text-align:center;
+	cursor:default;
+	position:relative;
+}
+.none>div{
+	position:absolute;
+	line-height:60px;
+	width:60px;
+	height:60px;
+	overflow:hidden;
+	margin:-30px 0 0 -30px;
+	text-align:center;
+}
+.hide{
+	background:#EEE !important;
+	cursor:pointer;
+}
+.pink{background:#E9BBE3;}
+.pink2{background:#ff80c0;}
+.pink3{background:#fd8689;}
+.blue{background:#C4D8F3;}
+.blue2{background:#87befc;}
+.blue2{background:#3a8af5;}
+.green{background:#9EE6BC;}
+.green2{background:#86e1e3;}
+.green3{background:#bbd98a;}
+.yellow{background:#eaf09f;}
+.yellow2{background:#e7eb52;}
+.purple{background:#D2C3E5;}
+.purple2{background:#9595ff;}
+.orange{background:#fccdad;}
+.orange2{background:#fda082;}
+
+.popupWrap{
+	width:100%;
+	height:100%;
+	z-index:9999;
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+}
+.popupBg{
+	opacity:0.5;
+	background:#000;
+	width:100%;
+	height:100%;
+	min-height:700px;
+	min-width:630px;
+}
+.popupBox{
+	width:600px;
+	height:300px;
+	border-radius:8px;
+	position:fixed;
+	margin-top:-200px;
+	top:50%;
+	margin-left:-300px;
+	left:50%;
+	background:#FFF;
+}
+.popupBox>b{
+	height:50px;
+	background:#F5E0EB;
+	display:block;
+	color:#C36;
+	font:bold 25px/50px "Microsoft YaHei";
+	padding:0 0 0 20px;
+	border-radius:6px 6px 0 0 
+}
+.popupBox>b>i{
+	display:block;
+	float:right;
+	width:50px;
+	height:50px;
+	font:normal 45px/45px "Microsoft YaHei";
+	color:#C36;
+}
+.popupBox>span{
+	display:block;
+	width:500px;
+	height:165px;
+	margin:15px auto 10px;
+	overflow:hidden;
+}
+.popupBox>span *{
+	font:normal 25px/45px "Microsoft YaHei";
+	color:#4B4B4B;
+}
+.popupBox>button{
+	width:120px;
+	height:45px;
+	border:1px solid #C36;
+	background:#F5E0EB;
+	color:#C36;
+	border-radius:5px;
+	display:block;
+	margin:0 auto;
+	cursor:pointer;
+	font:bold 22px/45px "Microsoft YaHei";
+}
+.show{
+	display:block !important;
+}
+.hidden{
+	display:none;
+}
+.cnt{
+	border:1px solid #CCC;
+	padding:5px;
+	overflow:hidden;
+}
+.cnt>ol>li{
+	display:block;
+	width:90px;
+	margin:25px 10px 25px 40px;
+	text-align:center;
+	height:90px;
+	line-height:90px;
+	border-radius:50%;
+	background:#F5E0EB;
+	color:#C36;
+	cursor:pointer;
+	float:left;
+	font-size:50px;
+}
+.locked{
+	background:#DDD !important;
+	color:#4B4B4B !important;
+	cursor:default !important;
+	position:relative;
+}
+.locked>b{
+    font-size: 27px;
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    margin: -45px 0 0 -45px;
+    top: 50%;
+    left: 50%;
+    color: #FFF;
+    font-weight: bold;
+    opacity:0.8;
+}
