@@ -163,6 +163,10 @@ $('.restart').click(function(){
 	init();
 });
 $(document).ready(function(){
+	if($('html').width() > $('html').height()){
+		$('html').css({'height':$(window).height(),'width':$(window).height()*0.75});
+		$('.mmr').addClass('mmrPC').removeClass("mmr");
+	}
 	$('.cnt>ol').removeClass('hidden');
 	$('.cnt>ol>li').click(function(){
 		//levelTemp = $(this).index();
