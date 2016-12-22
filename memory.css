@@ -9,6 +9,68 @@ html, body{
 	height:99%;
 	width:100%;
 }
+
+.mmrPC{
+	width:98%;
+	height:90%;
+	margin:2% auto;
+	border:2px solid #888;
+	padding:5% 0;
+}
+.mmrPC>h1{
+	text-align:center;
+	line-height:25px;
+	margin:0 0 15px;
+	font-size:30px;
+}
+.mmrPC .menu{
+	height:30px;
+	margin:5px auto; 
+}
+.mmrPC .menu .back{
+	font-size:30px;
+	line-height:30px;
+	background:#F5E0EB;
+	color:#C36;
+	border:none;
+	border-radius:8px;
+	width:80px;
+	height:30px;
+	cursor:pointer;
+	overflow:hidden;
+	float:left;
+}
+.mmrPC .menu>b{
+	height:30px;
+	width:110px;
+	margin:-18px 0 0 -55px;
+	font:normal 20px/30px "Microsoft YaHei"
+}
+.mmrPC .menu>b>strong{
+	font:bold 30px/30px "Calibri","Microsoft YaHei"
+}
+.mmrPC .mmrStopwatch{
+	width:100px;
+	height:30px;
+	font:normal 22px/30px "Microsoft YaHei";
+}
+.mmrPC .mmrEles{
+	margin:0 auto 5px;
+}
+.mmrPC>.cnt>ol>li{
+	height:60px;
+	width:60px;
+	line-height:60px;
+}
+.mmrPC .locked>b{
+	width:60px;
+	height:60px;
+	margin:-30px 0 0 -30px;
+    font:bold 16px/60px "Microsoft YaHei";
+}
+
+
+
 .mmr{
 	width:98%;
 	height:85%;
@@ -27,6 +89,7 @@ html, body{
 	margin:0 auto;
 	padding:0 5px;
 	position:relative;
+	overflow:hidden;
 }
 .vsbHddn{
 	visibility:hidden;
@@ -94,7 +157,7 @@ li{
 	cursor:pointer;
 	color:#C36;
 	font-size:20px;
-	margin:0 auto;
+	margin:5px auto;
 	position:relative !important;
 	border:2px solid #C36;
 }
@@ -233,15 +296,13 @@ li{
 	position:relative;
 }
 .locked>b{
-    font-size: 27px;
     position: absolute;
     width: 90px;
     height: 90px;
-    line-height: 90px;
     margin: -45px 0 0 -45px;
     top: 50%;
     left: 50%;
     color: #FFF;
-    font-weight: bold;
     opacity:0.8;
+    font:bold 27px/90px "Microsoft YaHei";
 }
