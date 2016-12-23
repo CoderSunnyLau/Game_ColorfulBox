@@ -336,3 +336,6 @@ li{
     opacity:0.8;
     font:bold 27px/90px "Microsoft YaHei";
 }
+audio{
+	display:none;
+}
