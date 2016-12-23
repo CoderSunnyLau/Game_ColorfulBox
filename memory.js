@@ -17,8 +17,7 @@ function setLevel(a){
 	mmrBox.empty();
 	$('.mmrStopwatch').html("00：00");
 	$('.menu').find('b').html("第 <strong>" + (a + 1) + "</strong> 關");
-	$('.menu').removeClass("vsbHddn");
-	$('.restart').removeClass("vsbHddn");
+	$('.menu,.restart,.top').removeClass("vsbHddn");
 	$('.cnt>ol').hide();
 	$('.mmrEles').show();
 	for(var i = 0; i < Math.pow((3 + a),2); i ++){
@@ -34,7 +33,8 @@ function setLevel(a){
 	eleMargin = (15 - a) + "px";
 	$('.mmrEles').css({'height':$('.mmrEles').width()});
 	$('.mmrEles').attr('cellspacing',eleMargin);
-	$('.none').find('div').css('left',$('.mmrEle').eq(0).width() / 2)
+	$('.none').find('div').css('left',$('.mmrEle').eq(0).width() / 2);
+	$('.top').find('i').html((!!($.cookie("Top_" + levelTemp))) ? $.cookie("Top_" + levelTemp) : "暫無");
 	init();
 }
 function init(){
@@ -64,6 +64,27 @@ function init(){
 			case 9: eles.eq(i).addClass("yellow2");break;
 			case 10: eles.eq(i).addClass("purple2");break;
 			case 11: eles.eq(i).addClass("orange2");break;
+			case 12: eles.eq(i).addClass("pink3");break;
+			case 13: eles.eq(i).addClass("green3");break;
+			case 14: eles.eq(i).addClass("blue3");break;
+			case 15: eles.eq(i).addClass("yellow3");break;
+			case 16: eles.eq(i).addClass("purple3");break;
+			case 17: eles.eq(i).addClass("orange3");break;
+			case 18: eles.eq(i).addClass("pink4");break;
+			case 19: eles.eq(i).addClass("green4");break;
+			case 20: eles.eq(i).addClass("grey");break;
+			case 21: eles.eq(i).addClass("red");break;
+			case 22: eles.eq(i).addClass("blue4");break;
+			case 23: eles.eq(i).addClass("green5");break;
+			case 24: eles.eq(i).addClass("blue5");break;
+			case 25: eles.eq(i).addClass("grey2");break;
+			case 26: eles.eq(i).addClass("red2");break;
+			case 27: eles.eq(i).addClass("grey3");break;
+			case 28: eles.eq(i).addClass("red3");break;
+			case 29: eles.eq(i).addClass("orange4");break;
+			case 30: eles.eq(i).addClass("purple4");break;
+			case 31: eles.eq(i).addClass("yellow4");break;
+			case 32: eles.eq(i).addClass("pink5");break;
 		}
 	}
 	eles.on(ev,function(event){
@@ -140,7 +161,6 @@ function mmrWatchFn(){
 		$('.mmrStopwatch').html("00：01");
 		clearInterval(mmrItvl);
 		mmrItvl = setInterval(function(){
-			console.log(time);
 			time++;
 			s++;
 			if(time % 60 == 0){
@@ -150,6 +170,11 @@ function mmrWatchFn(){
 			mm = m <= 9 ? "0" + m : m;
 			ss = s <= 9 ? "0" + s : s;
 			$('.mmrStopwatch').html(mm + "：" + ss);
+			if(time >= 300){
+				clearInterval(mmrItvl);
+				alert("時間到了，遊戲失敗。。");
+				$('.restart').click();
+			}
 		},1000);
 }
 if(typeof(document.ontouchstart)=="undefined"){
@@ -179,8 +204,7 @@ $(document).ready(function(){
 		}
 	});
 	$('.back').click(function(){
-		$('.menu').addClass("vsbHddn");
-		$('.restart').addClass("vsbHddn");
+		$('.menu,.restart,.top').addClass("vsbHddn");
 		$('.cnt>ol').show();
 		$('.mmrEles').hide();
 		clearInterval(mmrItvl);
