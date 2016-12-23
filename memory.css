@@ -144,7 +144,7 @@ li{
 }
 .mmrEles td{
 	border:1px solid #CCC;
-	border-radius:10px;
+	border-radius:5px;
 	font-size:40px;
 	font-weight:bold;
 	color:#C36;
@@ -183,21 +183,39 @@ li{
 	background:#EEE !important;
 	cursor:pointer;
 }
-.pink{background:#E9BBE3;}
-.pink2{background:#ff80c0;}
-.pink3{background:#fd8689;}
+.pink{background:#fdc4f5;}
+.pink2{background:#fe76af;}
+.pink3{background:#fd9db3;}
+.pink4{background:#ff80f2;}
+.pink5{background:#ff3c9d;}
 .blue{background:#C4D8F3;}
 .blue2{background:#87befc;}
-.blue2{background:#3a8af5;}
+.blue3{background:#86e1e3;}
+.blue4{background:#5ea8d0;}
+.blue5{background:#3a8af5;}
 .green{background:#9EE6BC;}
-.green2{background:#86e1e3;}
+.green2{background:#b0e205;}
 .green3{background:#bbd98a;}
+.green4{background:#48c69d;}
+.green5{background:#69c862;}
 .yellow{background:#eaf09f;}
 .yellow2{background:#e7eb52;}
+.yellow3{background:#ffd566;}
+.yellow4{background:#ffb811;}
 .purple{background:#D2C3E5;}
 .purple2{background:#9595ff;}
+.purple3{background:#bd7bff;}
+.purple4{background:#cb5abd;}
 .orange{background:#fccdad;}
 .orange2{background:#fda082;}
+.orange3{background:#fb8239;}
+.orange4{background:#ff4e02;}
+.grey{background:#EEE;}
+.grey2{background:#BBB;}
+.grey3{background:#888;}
+.red{background:#ff8c8c;}
+.red2{background:#ff3e3e;}
+.red3{background:#ca1111;}
 
 .popupWrap{
 	width:100%;
@@ -291,6 +309,12 @@ li{
 	cursor:pointer;
 	float:left;
 	font-size:50px;
+}
+.mmrPC>.top, .mmr>.top{
+	float:right;
+	margin:-33px 5% 0;
+	font:normal 15px/25px "Microsoft YaHei";
+	color:#C36;
 }
 .locked{
 	background:#DDD !important;
