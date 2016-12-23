@@ -261,6 +261,7 @@ li{
 	height:50px;
 	font:normal 45px/45px "Microsoft YaHei";
 	color:#C36;
+	cursor:pointer;
 }
 .popupBox>span{
 	display:block;
