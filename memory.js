@@ -85,6 +85,25 @@ function init(){
 			case 30: eles.eq(i).addClass("purple4");break;
 			case 31: eles.eq(i).addClass("yellow4");break;
 			case 32: eles.eq(i).addClass("pink5");break;
+			/* ----------------------------------------- */
+			case 33: eles.eq(i).addClass("yellow");break;
+			case 34: eles.eq(i).addClass("purple");break;
+			case 35: eles.eq(i).addClass("orange");break;
+			case 36: eles.eq(i).addClass("pink2");break;
+			case 37: eles.eq(i).addClass("green2");break;
+			case 38: eles.eq(i).addClass("blue2");break;
+			case 39: eles.eq(i).addClass("yellow2");break;
+			case 40: eles.eq(i).addClass("purple2");break;
+			case 41: eles.eq(i).addClass("yellow4");break;
+			case 42: eles.eq(i).addClass("pink5");break;
+			case 43: eles.eq(i).addClass("yellow");break;
+			case 44: eles.eq(i).addClass("purple");break;
+			case 45: eles.eq(i).addClass("orange");break;
+			case 46: eles.eq(i).addClass("pink2");break;
+			case 47: eles.eq(i).addClass("green2");break;
+			case 48: eles.eq(i).addClass("blue2");break;
+			case 49: eles.eq(i).addClass("yellow2");break;
+			case 50: eles.eq(i).addClass("purple2");break;
 		}
 	}
 	eles.on(ev,function(event){
@@ -139,7 +158,11 @@ function turnEle_2(ele2){
 				}
 			}else{
 				$.cookie("Top_" + levelTemp,$('.mmrStopwatch').html(),"7");
-				$('.tipMsg').html("恭喜你創造了新紀錄~");
+				if(levelTemp == 9){
+					$('.tipMsg').html("我的天吶！你居然通過了所有關卡，打敗了妖精！！ㄒ-ㄒ");
+				}else{
+					$('.tipMsg').html("恭喜你創造了新紀錄~");
+				}
 			}
 			$('.top').find('i').html($.cookie("Top_" + levelTemp));
 			$('.mark').find('i').html($('.mmrStopwatch').html());
