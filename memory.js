@@ -122,9 +122,12 @@ function init(){
 function turnEle_1(ele){
 	if(markTemp == 1){
 		clearTimeout(eleTimeout);
-		ele1.removeClass("hide").addClass("hide");
-		ele_2.removeClass("hide").addClass("hide");
+		ele1.addClass("hide");
+		ele_2.addClass("hide");
 	}
+	console.log("click1");
+	clicksnd.currentTime = 0;
+	clicksnd.play();
 	ele.removeClass("hide").addClass("click");
 	eleTemp = 1;
 	ele1 = ele;
@@ -137,6 +140,9 @@ function turnEle_2(ele2){
 		eleSum = $('.hide');
 		markTemp = 0;
 		if(ele1.attr("class") != ele2.attr("class")){
+			console.log("click2");
+			clicksnd.currentTime = 0;
+			clicksnd.play();
 			markTemp = 1;
 			timeTemp = 1;
 			eleTimeout = setTimeout(function(){
@@ -146,6 +152,8 @@ function turnEle_2(ele2){
 			},1000);
 		}else if(eleSum.length == 0){
 			clearInterval(mmrItvl);
+			winsnd.currentTime = 0;
+			winsnd.play();
 			if($.cookie("Top_" + levelTemp)){
 				var cookieTop = $.cookie("Top_" + levelTemp).split("："),
 					thisMark = $('.mmrStopwatch').html().split("：");
@@ -171,6 +179,10 @@ function turnEle_2(ele2){
 				$('ol li').eq(levelTemp + 1).find('b').remove();
 				$('ol').find('li').eq(levelTemp + 1).removeClass("locked");
 			}
+		}else{
+			console.log("mark");
+			marksnd.currentTime = 0;
+			marksnd.play();
 		}
 		eleTemp = 0;
 	}
@@ -210,6 +222,9 @@ $('.restart').click(function(){
 	init();
 });
 $(document).ready(function(){
+	var clicksnd = document.getElementById("clicksnd"),
+		marksnd = document.getElementById("marksnd")
+		winsnd = document.getElementById("winsnd");
 	console.log($(window).height());
 	if($('html').width() > $('html').height()){
 		$('.mmr').addClass('mmrPC').removeClass("mmr");
