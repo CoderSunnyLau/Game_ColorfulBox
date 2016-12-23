@@ -52,23 +52,41 @@ function init(){
 	});
 	for(var i = 0; i < arr.length; i ++){
 		switch((arr[i]) % (arr.length / 2)){
+			case 33:
 			case 0: eles.eq(i).addClass("pink");break;
+			case 34:
 			case 1: eles.eq(i).addClass("green");break;
+			case 35:
 			case 2: eles.eq(i).addClass("blue");break;
+			case 36:
 			case 3: eles.eq(i).addClass("yellow");break;
+			case 37:
 			case 4: eles.eq(i).addClass("purple");break;
+			case 38:
 			case 5: eles.eq(i).addClass("orange");break;
+			case 39:
 			case 6: eles.eq(i).addClass("pink2");break;
+			case 40:
 			case 7: eles.eq(i).addClass("green2");break;
+			case 41:
 			case 8: eles.eq(i).addClass("blue2");break;
+			case 42:
 			case 9: eles.eq(i).addClass("yellow2");break;
+			case 43:
 			case 10: eles.eq(i).addClass("purple2");break;
+			case 44:
 			case 11: eles.eq(i).addClass("orange2");break;
+			case 45:
 			case 12: eles.eq(i).addClass("pink3");break;
+			case 46:
 			case 13: eles.eq(i).addClass("green3");break;
+			case 47:
 			case 14: eles.eq(i).addClass("blue3");break;
+			case 48:
 			case 15: eles.eq(i).addClass("yellow3");break;
+			case 49:
 			case 16: eles.eq(i).addClass("purple3");break;
+			case 50:
 			case 17: eles.eq(i).addClass("orange3");break;
 			case 18: eles.eq(i).addClass("pink4");break;
 			case 19: eles.eq(i).addClass("green4");break;
@@ -85,25 +103,6 @@ function init(){
 			case 30: eles.eq(i).addClass("purple4");break;
 			case 31: eles.eq(i).addClass("yellow4");break;
 			case 32: eles.eq(i).addClass("pink5");break;
-			/* ----------------------------------------- */
-			case 33: eles.eq(i).addClass("yellow");break;
-			case 34: eles.eq(i).addClass("purple");break;
-			case 35: eles.eq(i).addClass("orange");break;
-			case 36: eles.eq(i).addClass("pink2");break;
-			case 37: eles.eq(i).addClass("green2");break;
-			case 38: eles.eq(i).addClass("blue2");break;
-			case 39: eles.eq(i).addClass("yellow2");break;
-			case 40: eles.eq(i).addClass("purple2");break;
-			case 41: eles.eq(i).addClass("yellow4");break;
-			case 42: eles.eq(i).addClass("pink5");break;
-			case 43: eles.eq(i).addClass("yellow");break;
-			case 44: eles.eq(i).addClass("purple");break;
-			case 45: eles.eq(i).addClass("orange");break;
-			case 46: eles.eq(i).addClass("pink2");break;
-			case 47: eles.eq(i).addClass("green2");break;
-			case 48: eles.eq(i).addClass("blue2");break;
-			case 49: eles.eq(i).addClass("yellow2");break;
-			case 50: eles.eq(i).addClass("purple2");break;
 		}
 	}
 	eles.on(ev,function(event){
