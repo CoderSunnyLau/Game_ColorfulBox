@@ -15,6 +15,8 @@ html, body{
 	height:98%;
 	margin:10px auto 0;
 	border:2px solid #888;
+	min-width:400px;
+	min-height:525px;
 }
 .mmrPC>h1{
 	text-align:center;
@@ -194,8 +196,8 @@ li{
 .blue4{background:#5ea8d0;}
 .blue5{background:#3a8af5;}
 .green{background:#9EE6BC;}
-.green2{background:#b0e205;}
-.green3{background:#bbd98a;}
+.green2{background:#bbd98a;}
+.green3{background:#95d13a;}
 .green4{background:#48c69d;}
 .green5{background:#69c862;}
 .yellow{background:#eaf09f;}
