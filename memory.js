@@ -126,7 +126,7 @@ function turnEle_1(ele){
 		ele_2.addClass("hide");
 	}
 	console.log("click1");
-	clicksnd.currentTime = 0.05;
+	clicksnd.currentTime = 0;
 	clicksnd.play();
 	ele.removeClass("hide").addClass("click");
 	eleTemp = 1;
@@ -141,7 +141,7 @@ function turnEle_2(ele2){
 		markTemp = 0;
 		if(ele1.attr("class") != ele2.attr("class")){
 			console.log("click2");
-			clicksnd.currentTime = 0.05;
+			clicksnd.currentTime = 0;
 			clicksnd.play();
 			markTemp = 1;
 			timeTemp = 1;
@@ -151,7 +151,7 @@ function turnEle_2(ele2){
 				timeTemp = 0;
 			},1000);
 		}else if(eleSum.length == 0){
-			marksnd.currentTime = 0.05;
+			marksnd.currentTime = 0;
 			marksnd.play();
 			winsnd.currentTime = 0.1;
 			winsnd.play();
@@ -182,7 +182,7 @@ function turnEle_2(ele2){
 				$('ol').find('li').eq(levelTemp + 1).removeClass("locked");
 			}
 		}else{
-			marksnd.currentTime = 0.05;
+			marksnd.currentTime = 0;
 			marksnd.play();
 		}
 		eleTemp = 0;
