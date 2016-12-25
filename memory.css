@@ -74,7 +74,12 @@ html, body{
 	width:90px;
 	border-radius:8px;
 }
-
+.mmrPC>.top{
+	float:right;
+	margin:-33px 5% 0;
+	font:normal 15px/25px "Microsoft YaHei";
+	color:#C36;
+}
 
 .mmr{
 	width:98%;
@@ -219,7 +224,7 @@ li{
 .red2{background:#ff3e3e;}
 .red3{background:#ca1111;}
 
-.popupWrap{
+.popupWrap,.ruleWrap{
 	width:100%;
 	height:100%;
 	z-index:9999;
@@ -228,7 +233,7 @@ li{
 	left:0;
 	display:none;
 }
-.popupBg{
+.popupBg, .ruleBg{
 	opacity:0.5;
 	background:#000;
 	width:100%;
@@ -236,7 +241,7 @@ li{
 	min-height:700px;
 	min-width:630px;
 }
-.popupBox{
+.popupBox, .rule{
 	width:600px;
 	height:300px;
 	border-radius:8px;
@@ -247,7 +252,10 @@ li{
 	left:50%;
 	background:#FFF;
 }
-.popupBox>b{
+.rule{
+	height:320px;
+}
+.popupBox>b, .rule>b{
 	height:50px;
 	background:#F5E0EB;
 	display:block;
@@ -265,18 +273,29 @@ li{
 	color:#C36;
 	cursor:pointer;
 }
-.popupBox>span{
+.popupBox>span, .rule>span{
 	display:block;
-	width:500px;
-	height:165px;
 	margin:15px auto 10px;
 	overflow:hidden;
+}
+.popupBox>span{
+	height:165px;
+	width:500px;
+}
+.rule>span{
+	width:530px;
+}
+.rule>span>i{
+	display:block;
+	padding-left:1em;
+	text-indent:-1em;
+	font:normal 18px/25px "Microsoft YaHei";	
 }
 .popupBox>span *{
 	font:normal 25px/45px "Microsoft YaHei";
 	color:#4B4B4B;
 }
-.popupBox>button{
+.popupBox>button, .rule>button{
 	width:120px;
 	height:45px;
 	border:1px solid #C36;
@@ -287,6 +306,19 @@ li{
 	margin:0 auto;
 	cursor:pointer;
 	font:bold 22px/45px "Microsoft YaHei";
+}
+.rule>button{
+	height:35px;
+	font:bold 20px/35px "Microsoft YaHei";
+}
+.rule>p{
+	position:absolute;
+	margin-left:40px;
+	font:normal 17px/30px "Microsoft YaHei";
+}
+.rule>p>input{
+	height:18px;
+	width:18px;
 }
 .show{
 	display:block !important;
@@ -313,10 +345,10 @@ li{
 	float:left;
 	font-size:50px;
 }
-.mmrPC>.top, .mmr>.top{
+.mmr>.top{
 	float:right;
 	margin:-33px 5% 0;
-	font:normal 15px/25px "Microsoft YaHei";
+	font:normal 20px/25px "Microsoft YaHei";
 	color:#C36;
 }
 .locked{
