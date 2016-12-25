@@ -99,10 +99,11 @@ html, body{
 	float:right;
 	font:italic 25px/20px "Calibri";
 	color:#CCC;
-	margin-right:5px;
+	margin:-30px 5px 0 0;
 }
 .mmrPC>.sunny{
 	font:italic 18px/20px "Calibri";
+	margin:0 5px 0 0;
 }
 .menu{
 	height:55px;
