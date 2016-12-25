@@ -97,9 +97,12 @@ html, body{
 }
 .sunny{
 	float:right;
-	font:italic 15px/20px "Calibri";
+	font:italic 25px/20px "Calibri";
 	color:#CCC;
 	margin-right:5px;
+}
+.mmrPC>.sunny{
+	font:italic 18px/20px "Calibri";
 }
 .menu{
 	height:55px;
