@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<script src="jquery.min.js"></script>
+	<script src="jquery.cookie.js"></script>
+    <style type="text/css">
+		p{
+            width:180px;
+            height:60px;
+            border:2px solid #C36;
+            background:#F5E0EB;
+            border-radius:5px;
+            font:bold 18px/25px "Microsoft YaHei";
+            text-align:center;
+            padding:20px 10px;
+        }
+        div{
+            width:210px;
+            height:210px;
+            margin:auto;
+        }
+        button{
+            display:block;
+            width:80px;
+            height:30px;
+            margin:0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>只能點一次，多點紅包就沒了噢，記得截圖~</p>
+        <button>點擊抽獎</button>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('button').click(function(){
+                console.log("");
+                if(!$.cookie("gift")){
+                    $.cookie("gift",0,"30");
+                    var rdm = parseInt(Math.random()*10);
+                    switch(rdm){
+                    	case 1: $('p').html("恭喜你獲得紅包￥1");break;
+            			case 2: $('p').html("恭喜你獲得紅包￥2");break;
+            			case 5: $('p').html("恭喜你獲得紅包￥5");break;
+            			default: $('p').html("很遺憾，你沒有中獎。。");break;
+                    }
+                }else{
+                    $('p').html("對不起，您已經抽過獎了呢~");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
