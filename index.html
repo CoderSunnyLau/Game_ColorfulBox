@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Memory Game</title>
-	<meta name="description" id="description" content="挑戰你的記憶力和眼力的小遊戲，妖精已玩瞎。。。" />
+	<title>Colorful Box(繽紛彩格)</title>
+	<meta name="description" id="description" content="挑戰記憶力和眼力的小遊戲，你能玩到第幾關呢？——繽紛彩格。。。" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width,maximum-scale=1.0,initial-scale=0.5,user-scalable=no">
 	<link rel="stylesheet" rev="stylesheet" href="memory.css" type="text/css" media="all" />
@@ -12,7 +12,7 @@
 <body>
 	<img src="https://raw.githubusercontent.com/CoderSunnyLau/Game_Memory/master/mainPic.jpg" style="width:0;height:0;overflow:hidden;" />
 	<div class="mmr">
-		<h1>Memory Game</h1>
+		<h1>Colorful Box</h1>
 		<div class="menu vsbHddn">
 			<button class="back">&lt;</button>
 			<b></b>
@@ -47,10 +47,26 @@
 				<button>下一關</button>
 			</div>
 		</div>
+		<div class="ruleWrap">
+			<div class="ruleBg"></div>
+			<div class="rule">
+				<b>遊戲規則</b>
+				<span>
+					<i>1.點擊方格即可打開查看方格顏色；</i>
+					<i>2.每次最多同時打開2個方格，1秒後自動關閉這兩個方格。若在自動關閉前繼續點擊第三個方格，則前兩個會立即關閉；</i>
+					<i>3.若同時打開的兩個方格顏色相同，即完成一組配對，這兩個方格將不會被關閉；</i>
+					<i>4.當所有方格都配對完成，即所有方格都被打開，則成功通關；</i>
+					<i>5.若在規定時間內(5分鐘)未將所有方格全部打開，則遊戲失敗；</i>
+					<i>6.遊戲僅供休閒娛樂，請保持冷靜。。。</i>
+				</span>
+				<p><input class="checkBox" type="checkbox" />不再提示</p>
+				<button>確 定</button>
+			</div>
+		</div>
 	</div>
-	<audio id="clicksnd" src="click.wav" controls="controls"></audio>
-	<audio id="marksnd" src="mark.wav" controls="controls"></audio>
-	<audio id="winsnd" src="win.mp3" controls="controls"></audio>
+	<audio id="clicksnd" src="./music/click.wav" controls="controls"></audio>
+	<audio id="marksnd" src="./music/mark.wav" controls="controls"></audio>
+	<audio id="winsnd" src="./music/win.mp3" controls="controls"></audio>
 	<script src="memory.js"></script>
 </body>
 </html>
