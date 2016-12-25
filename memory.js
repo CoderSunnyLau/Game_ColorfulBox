@@ -126,7 +126,7 @@ function turnEle_1(ele){
 		ele_2.addClass("hide");
 	}
 	console.log("click1");
-	clicksnd.currentTime = 0;
+	clicksnd.currentTime = 0.05;
 	clicksnd.play();
 	ele.removeClass("hide").addClass("click");
 	eleTemp = 1;
@@ -141,7 +141,7 @@ function turnEle_2(ele2){
 		markTemp = 0;
 		if(ele1.attr("class") != ele2.attr("class")){
 			console.log("click2");
-			clicksnd.currentTime = 0;
+			clicksnd.currentTime = 0.05;
 			clicksnd.play();
 			markTemp = 1;
 			timeTemp = 1;
@@ -151,9 +151,11 @@ function turnEle_2(ele2){
 				timeTemp = 0;
 			},1000);
 		}else if(eleSum.length == 0){
-			clearInterval(mmrItvl);
-			winsnd.currentTime = 0;
+			marksnd.currentTime = 0.05;
+			marksnd.play();
+			winsnd.currentTime = 0.1;
 			winsnd.play();
+			clearInterval(mmrItvl);
 			if($.cookie("Top_" + levelTemp)){
 				var cookieTop = $.cookie("Top_" + levelTemp).split("："),
 					thisMark = $('.mmrStopwatch').html().split("：");
@@ -180,8 +182,7 @@ function turnEle_2(ele2){
 				$('ol').find('li').eq(levelTemp + 1).removeClass("locked");
 			}
 		}else{
-			console.log("mark");
-			marksnd.currentTime = 0;
+			marksnd.currentTime = 0.05;
 			marksnd.play();
 		}
 		eleTemp = 0;
@@ -253,6 +254,12 @@ $(document).ready(function(){
 		$('.popupWrap').hide();
 		setLevel(levelTemp + 1);
 	});
+	$('.rule>button').click(function(){
+		$('.ruleWrap').hide();
+		if($('.checkBox').eq(0).is(":checked")){
+			$.cookie("rule",1,"7");
+		}
+	});
 	if($.cookie("levelCookie")){
 		$.cookie("levelCookie");
 		for(var i = 1; i <= parseInt($.cookie("levelCookie")); i++){
@@ -261,6 +268,12 @@ $(document).ready(function(){
 		}
 	}else{
 		$.cookie("levelCookie",0,"7");
+	}
+	if(!$.cookie("rule") || $.cookie("rule") == 0){
+		$('.ruleWrap').show();
+		$.cookie("rule",0,"7");
+	}else if($.cookie("rule") == 1){
+		$('.ruleWrap').hide();
 	}
 	/*觸摸滑動監聽，阻止滑動*/
 	document.addEventListener("touchmove",function(e){
