@@ -23,6 +23,7 @@ html, body{
 	line-height:25px;
 	margin:15px 0 15px;
 	font-size:30px;
+	clear:both;
 }
 .mmrPC .menu{
 	height:30px;
@@ -92,6 +93,13 @@ html, body{
 	text-align:center;
 	line-height:30px;
 	margin:0 0 40px;
+	clear:both;
+}
+.sunny{
+	float:right;
+	font:italic 15px/20px "Calibri";
+	color:#CCC;
+	margin-right:5px;
 }
 .menu{
 	height:55px;
