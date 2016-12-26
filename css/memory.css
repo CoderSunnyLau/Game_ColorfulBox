@@ -1,0 +1,385 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:"Calibri";
+	user-select:none;
+	-webkit-user-select:none;
+}
+html, body{
+	height:98%;
+	width:100%;
+}
+
+.mmrPC{
+	width:98%;
+	height:98%;
+	margin:10px auto 0;
+	border:2px solid #888;
+	min-width:400px;
+	min-height:525px;
+}
+.mmrPC>h1{
+	text-align:center;
+	line-height:25px;
+	margin:15px 0 15px;
+	font-size:30px;
+	clear:both;
+}
+.mmrPC .menu{
+	height:30px;
+	margin:5px auto; 
+}
+.mmrPC .menu .back{
+	font-size:30px;
+	line-height:30px;
+	background:#F5E0EB;
+	color:#C36;
+	border:none;
+	border-radius:8px;
+	width:80px;
+	height:30px;
+	cursor:pointer;
+	overflow:hidden;
+	float:left;
+}
+.mmrPC .menu>b{
+	height:30px;
+	width:110px;
+	margin:-18px 0 0 -55px;
+	font:normal 20px/30px "Microsoft YaHei"
+}
+.mmrPC .menu>b>strong{
+	font:bold 30px/30px "Calibri","Microsoft YaHei"
+}
+.mmrPC .mmrStopwatch{
+	width:100px;
+	height:30px;
+	font:normal 22px/30px "Microsoft YaHei";
+}
+.mmrPC .mmrEles{
+	margin:0 auto 5px;
+}
+.mmrPC>.cnt>ol>li{
+	height:60px;
+	width:60px;
+	line-height:60px;
+}
+.mmrPC .locked>b{
+	width:60px;
+	height:60px;
+	margin:-30px 0 0 -30px;
+    font:bold 16px/60px "Microsoft YaHei";
+}
+.mmrPC .restart{
+	height:30px;
+	width:90px;
+	border-radius:8px;
+}
+.mmrPC>.top{
+	float:right;
+	margin:-33px 5% 0;
+	font:normal 15px/25px "Microsoft YaHei";
+	color:#C36;
+}
+
+.mmr{
+	width:98%;
+	height:85%;
+	margin:2% auto;
+	border:2px solid #888;
+	padding:8% 0;
+}
+.mmr h1{
+	text-align:center;
+	line-height:30px;
+	margin:0 0 40px;
+	clear:both;
+}
+.sunny{
+	float:right;
+	font:italic 25px/20px "Calibri";
+	color:#CCC;
+	margin:-30px 5px 0 0;
+}
+.mmrPC>.sunny{
+	font:italic 18px/20px "Calibri";
+	margin:0 5px 0 0;
+}
+.menu{
+	height:55px;
+	width:90%;
+	margin:0 auto;
+	padding:0 5px;
+	position:relative;
+	overflow:hidden;
+}
+.vsbHddn{
+	visibility:hidden;
+}
+.menu>b{
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 55px;
+    margin: -30px 0 0 -75px;
+    left: 50%;
+    top: 50%;
+    font:normal 30px/55px "Microsoft YaHei";
+    text-align: center;
+    color: #C36;
+}
+.menu>b>strong{
+	font:bold 40px/55px "Calibri","Microsoft YaHei";
+}
+.back{
+	font-size:50px;
+	line-height:50px;
+	background:#F5E0EB;
+	color:#C36;
+	border:none;
+	border-radius:10px;
+	width:120px;
+	height:50px;
+	cursor:pointer;
+	overflow:hidden;
+	float:left;
+}
+.mmrStopwatch{
+	width:120px;
+	height:55px;
+	font:normal 33px/55px "Microsoft YaHei";
+	color:#C36;
+	float:right;
+	text-align:right;
+}
+li{
+	list-style:none;
+}
+.mmrEles{
+	width:95%;
+	margin:0 auto 20px;
+	overflow:hidden;
+	table-layout:fixed;
+}
+.mmrEles td{
+	border:1px solid #CCC;
+	border-radius:5px;
+	font-size:40px;
+	font-weight:bold;
+	color:#C36;
+	empty-cells:show;
+	overflow:hidden;
+}
+.restart{
+	width:100px;
+	height:38px;
+	border-radius:10px;
+	background:#F5E0EB;
+	display:block;
+	cursor:pointer;
+	color:#C36;
+	font-size:20px;
+	margin:5px auto;
+	position:relative !important;
+	border:2px solid #C36;
+}
+.none{
+	background:#EEE;
+	text-align:center;
+	cursor:default;
+	position:relative;
+}
+.none>div{
+	position:absolute;
+	line-height:60px;
+	width:60px;
+	height:60px;
+	overflow:hidden;
+	margin:-30px 0 0 -30px;
+	text-align:center;
+}
+.hide{
+	background:#EEE !important;
+	cursor:pointer;
+}
+.pink{background:#fdc4f5;}
+.pink2{background:#fe76af;}
+.pink3{background:#fd9db3;}
+.pink4{background:#ff80f2;}
+.pink5{background:#ff3c9d;}
+.blue{background:#C4D8F3;}
+.blue2{background:#87befc;}
+.blue3{background:#86e1e3;}
+.blue4{background:#5ea8d0;}
+.blue5{background:#3a8af5;}
+.green{background:#9EE6BC;}
+.green2{background:#bbd98a;}
+.green3{background:#95d13a;}
+.green4{background:#48c69d;}
+.green5{background:#69c862;}
+.yellow{background:#eaf09f;}
+.yellow2{background:#e7eb52;}
+.yellow3{background:#ffd566;}
+.yellow4{background:#ffb811;}
+.purple{background:#D2C3E5;}
+.purple2{background:#9595ff;}
+.purple3{background:#bd7bff;}
+.purple4{background:#cb5abd;}
+.orange{background:#fccdad;}
+.orange2{background:#fda082;}
+.orange3{background:#fb8239;}
+.orange4{background:#ff4e02;}
+.grey{background:#CCC;}
+.grey2{background:#AAA;}
+.grey3{background:#777;}
+.red{background:#ff8c8c;}
+.red2{background:#ff3e3e;}
+.red3{background:#ca1111;}
+
+.popupWrap,.ruleWrap{
+	width:100%;
+	height:100%;
+	z-index:9999;
+	position:absolute;
+	top:0;
+	left:0;
+	display:none;
+}
+.popupBg, .ruleBg{
+	opacity:0.5;
+	background:#000;
+	width:100%;
+	height:100%;
+	min-height:700px;
+	min-width:630px;
+}
+.popupBox, .rule{
+	width:600px;
+	height:300px;
+	border-radius:8px;
+	position:fixed;
+	margin-top:-200px;
+	top:50%;
+	margin-left:-300px;
+	left:50%;
+	background:#FFF;
+}
+.rule{
+	height:320px;
+}
+.popupBox>b, .rule>b{
+	height:50px;
+	background:#F5E0EB;
+	display:block;
+	color:#C36;
+	font:bold 25px/50px "Microsoft YaHei";
+	padding:0 0 0 20px;
+	border-radius:6px 6px 0 0 
+}
+.popupBox>b>i{
+	display:block;
+	float:right;
+	width:50px;
+	height:50px;
+	font:normal 45px/45px "Microsoft YaHei";
+	color:#C36;
+	cursor:pointer;
+}
+.popupBox>span, .rule>span{
+	display:block;
+	margin:15px auto 10px;
+	overflow:hidden;
+}
+.popupBox>span{
+	height:165px;
+	width:500px;
+}
+.rule>span{
+	width:530px;
+}
+.rule>span>i{
+	display:block;
+	padding-left:1em;
+	text-indent:-1em;
+	font:normal 18px/25px "Microsoft YaHei";	
+}
+.popupBox>span *{
+	font:normal 25px/45px "Microsoft YaHei";
+	color:#4B4B4B;
+}
+.popupBox>button, .rule>button{
+	width:120px;
+	height:45px;
+	border:1px solid #C36;
+	background:#F5E0EB;
+	color:#C36;
+	border-radius:5px;
+	display:block;
+	margin:0 auto;
+	cursor:pointer;
+	font:bold 22px/45px "Microsoft YaHei";
+}
+.rule>button{
+	height:35px;
+	font:bold 20px/35px "Microsoft YaHei";
+}
+.rule>p{
+	position:absolute;
+	margin-left:40px;
+	font:normal 17px/30px "Microsoft YaHei";
+}
+.rule>p>input{
+	height:18px;
+	width:18px;
+}
+.show{
+	display:block !important;
+}
+.hidden{
+	display:none;
+}
+.cnt{
+	border:1px solid #CCC;
+	padding:5px;
+	overflow:hidden;
+}
+.cnt>ol>li{
+	display:block;
+	width:90px;
+	margin:25px 10px 25px 40px;
+	text-align:center;
+	height:90px;
+	line-height:90px;
+	border-radius:50%;
+	background:#F5E0EB;
+	color:#C36;
+	cursor:pointer;
+	float:left;
+	font-size:50px;
+}
+.mmr>.top{
+	float:right;
+	margin:-33px 5% 0;
+	font:normal 20px/25px "Microsoft YaHei";
+	color:#C36;
+}
+.locked{
+	background:#DDD !important;
+	color:#4B4B4B !important;
+	cursor:default !important;
+	position:relative;
+}
+.locked>b{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    margin: -45px 0 0 -45px;
+    top: 50%;
+    left: 50%;
+    color: #FFF;
+    opacity:0.8;
+    font:bold 27px/90px "Microsoft YaHei";
+}
+audio{
+	display:none;
+}
