@@ -1,3 +1,3 @@
-# Game_Memory
-[![ColorfulBox]](https://codersunnylau.github.io/Game_Memory)
+# Game_ColorfulBox
+[![ColorfulBox]](https://codersunnylau.github.io/Game_ColorfulBox)
 [ColorfulBox]:img/mainPic.jpg
